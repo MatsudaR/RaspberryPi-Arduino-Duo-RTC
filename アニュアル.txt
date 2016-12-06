@@ -1,9 +1,14 @@
-SerialIn�ɂ���
-�f�[�^�^:Timed long
-In0�|�[�g�Ƀf�[�^����M���邱�Ƃ�Arduino Due���ɃA�i���O���͂̒l���擾�����C���̒l��Ԃ����܂��D
-������Out0,Out1�ł͎擾�����l�𑼂̃R���|�[�l���g�ւƑ��M���܂��D
+SerialInについて
+データ型:Timed long
+In0ポートにデータを受信することでArduino Due側にアナログ入力の値を取得させ，その値を返させます．
+加えてOut0,Out1では取得した値を他のコンポーネントへと送信します．
 
-SerialOut�ɂ���
-�f�[�^�^:Timed long
-In0,In1�Ƀf�[�^����M���邱�Ƃ�Arduino Due���ɔC�ӂ̒l�̃A�i���O�o�͂�����w�߂𑗂�܂��D
-Arduino Due�̕���\��10bit�Ɛݒ肵�Ă��邽�߁C4���܂ł̒l�����͉\�ł��D
+SerialOutについて
+データ型:Timed long
+In0,In1にデータを受信することでArduino Due側に任意の値のアナログ出力をする指令を送ります．
+Arduino Dueの分解能を10bitと設定しているため，4桁までの値が入力可能です．
+
+serial0.inoについて
+USBポートを用いてシリアル通信を行います．
+SerialOut,SerialInから入力された値によってアナログ出力および入力値を返します．
+また返される値は4桁に合わせるため0埋めを行ったものになります．
