@@ -1,0 +1,9 @@
+SerialInについて
+データ型:Timed long
+In0ポートにデータを受信することでArduino Due側にアナログ入力の値を取得させ，その値を返させます．
+加えてOut0,Out1では取得した値を他のコンポーネントへと送信します．
+
+SerialOutについて
+データ型:Timed long
+In0,In1にデータを受信することでArduino Due側に任意の値のアナログ出力をする指令を送ります．
+Arduino Dueの分解能を10bitと設定しているため，4桁までの値が入力可能です．
